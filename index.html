@@ -22,16 +22,16 @@
       <h2 class="info-title">Добро пожаловать обратно</h2>
       <p class="info-description">Продолжите обучение, отслеживайте прогресс и открывайте новые практические задания.</p>
     </div>
-    <form action="https://postman-echo.com/post" class="auth-form">
+    <form class="auth-form" action="https://postman-echo.com/post" method="POST">
       <h2 class="form-title">Вход в систему</h2>
       <p class="form-description">Используйте электронную почту и пароль.</p>
       <label class="form-label">
         <span class="form-caption">Электронная почта</span>
-        <input class="form-input" type="email" placeholder="email" required>
+        <input class="form-input" name="email" type="email" placeholder="email" required>
       </label>
       <label class="form-label">
         <span class="form-caption">Пароль</span>
-        <input class="form-input" type="password" placeholder="Password" required>
+        <input class="form-input" name="password" type="password" placeholder="Password" required>
       </label>
       <div class="form-add">
         <label class="form-add__remember">
