@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Auth form</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div class="auth-wrap">
+    <div class="auth-info">
+      <h1 class="info-logo">
+        <img class="gallery-img"
+             src="./img/logo.svg"
+             height="42"
+             width="42"
+             alt="logo">
+        Verstaem Cloud
+      </h1>
+      <h2 class="info-title">Добро пожаловать обратно</h2>
+      <p class="info-description">Продолжите обучение, отслеживайте прогресс и открывайте новые практические задания.</p>
+    </div>
+    <form action="" class="auth-form">
+      <h2 class="form-title">Вход в систему</h2>
+      <p class="form-description">Используйте электронную почту и пароль.</p>
+      <label class="form-label">
+        <span class="form-caption">Электронная почта</span>
+        <input class="form-input" type="email" placeholder="email" required>
+      </label>
+      <label class="form-label">
+        <span class="form-caption">Пароль</span>
+        <input class="form-input" type="password" placeholder="Password" required>
+      </label>
+      <div class="form-add">
+        <label class="form-add__remember">
+          <input type="checkbox">
+          <span class="form-add__remember-checkbox"></span>
+          <span class="form-add__remember-label">Запомнить меня</span>
+        </label>
+        <button class="form-add__forgot" type="button">Забыли пароль?</button>
+      </div>
+      <button class="form-submit" type="submit">Войти</button>
+      <small class="form-create">Нет аккаунта? <button class="form-create__button">Создать профиль</button></small>
+    </form>
+  </div>
+</body>
+</html>

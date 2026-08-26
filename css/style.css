@@ -1,0 +1,261 @@
+@font-face {
+  font-family: "SegoeUI";
+  src: url(../fonts/SegoeUI.woff2) format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SegoeUI";
+  src: url(../fonts/SegoeUIBold.woff2) format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  height: 100vh;
+  margin: 0;
+  font-family: "SegoeUI", sans-serif;
+  background-color: #5B42B9;
+}
+
+.auth-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1080px;
+  width: 100%;
+  padding: 20px;
+}
+
+.auth-info {
+  padding: 52px;
+  background-color: #7C5CFF;
+}
+
+.info-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0;
+  color: #FFFFFF;
+}
+
+.info-logo img {
+  height: 42px;
+  width: 42px;
+}
+
+.info-title {
+  margin: 40px 0 19px;
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 120%;
+  letter-spacing: 0;
+  color: #FFFFFF;
+}
+
+.info-description {
+  margin: 0;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.auth-form {
+  padding: 51px;
+  background-color: #10162E;
+}
+
+.form-title {
+  margin: 0 0 16px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 120%;
+  letter-spacing: 0;
+  color: #FFFFFF;
+}
+
+.form-description {
+  margin: 0 0 40px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  letter-spacing: 0;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 16px;
+}
+
+.form-caption {
+  display: block;
+  margin: 0 0 8px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 120%;
+  letter-spacing: 0;
+  color: #C9D1FF;
+}
+
+.form-input {
+  height: 54px;
+  width: 100%;
+  padding: 16px;
+  border-radius: 16px;
+  border: 0;
+  outline: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  letter-spacing: 0;
+  color: #FFFFFF;
+  background-color: #1B2344;
+}
+
+.form-input::placeholder {
+  color: #ffffff80;
+}
+
+.form-add {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form-add__remember {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.form-add__remember:hover {
+  opacity: .8;
+}
+
+.form-add__remember input {
+  position: absolute;
+  opacity: 0;
+  appearance: none;
+}
+
+.form-add__remember-checkbox {
+  position: relative;
+  display: block;
+  height: 16px;
+  width: 16px;
+  border-radius: 4px;
+  border: 1px solid #B9E3FF;
+}
+
+.form-add__remember-checkbox::before {
+  content: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  height: 8px;
+  width: 8px;
+  border-radius: 1px;
+  background-color: #B9E3FF;
+}
+
+.form-add__remember-label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 120%;
+  letter-spacing: 0;
+  color: #B9E3FF;
+}
+
+.form-add__remember input:checked + .form-add__remember-checkbox::before {
+  content: '';
+}
+
+.form-add__forgot {
+  padding: 0;
+  outline: none;
+  border: 0;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 120%;
+  letter-spacing: 0;
+  color: #B9E3FF;
+  background-color: transparent;
+  transition: .3s;
+}
+
+.form-add__forgot:hover {
+  color: #d9f0ff;
+}
+
+.form-submit {
+  height: 58px;
+  width: 100%;
+  margin-top: 16px;
+  border-radius: 20px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 120%;
+  letter-spacing: 0;
+  color: #FFFFFF;
+  background-color: #17B79A;
+  transition: .3s;
+}
+
+.form-submit:hover {
+  background-color: #1b7867;
+}
+
+.form-submit:active {
+  background-color: #0ef9ce;
+}
+
+.form-create {
+  display: block;
+  margin-top: 16px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 120%;
+  letter-spacing: 0;
+  color: #9EA9D6;
+}
+
+.form-create__button {
+  padding: 0;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 120%;
+  letter-spacing: 0;
+  color: #9EA9D6;
+  background-color: transparent;
+  transition: .3s;
+}
+
+.form-create__button:hover {
+  color: #ccd6fe;
+}
